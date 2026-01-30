@@ -128,7 +128,7 @@ class BlackjackBot(irc.bot.SingleServerIRCBot):
             return
         
         if nickname not in self.user_data:
-            self.user_data[nickname] = {'chips': 100, 'bet': 0}
+            self.user_data[nickname] = {'chips': 10000, 'bet': 0}
         
         if self.user_data[nickname]['chips'] < bet:
             connection.privmsg(self.channel, f"{nickname}, you don't have enough chips. Balance: {self.user_data[nickname]['chips']}")
@@ -257,9 +257,9 @@ class BlackjackBot(irc.bot.SingleServerIRCBot):
 
 if __name__ == "__main__":
     # Bot settings
-    server = "irc.freenode.net" # Example server
+    server = "irc.retronode.org" # Example server
     port = 6667
-    channel = "#bjpro" # Change to your channel name
+    channel = "#retronode" # Change to your channel name
     nickname = "BjBotPro"
 
     # Important Note on Gambling Laws:
