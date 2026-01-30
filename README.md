@@ -10,3 +10,5 @@ Play Blackjack on IRC
 !stand : stand
 <br><br> 
 !balance : balance
+<br><br>
+Keeps track of each users chips in a single "json" file.
